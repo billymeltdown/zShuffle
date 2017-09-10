@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		28908CF61F65678100A0D209 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28908CF51F65678100A0D209 /* AppDelegate.swift */; };
-		28908CF81F65678100A0D209 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28908CF71F65678100A0D209 /* ViewController.swift */; };
+		28908CF81F65678100A0D209 /* ShuffleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28908CF71F65678100A0D209 /* ShuffleViewController.swift */; };
 		28908CFB1F65678100A0D209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28908CF91F65678100A0D209 /* Main.storyboard */; };
 		28908CFD1F65678100A0D209 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28908CFC1F65678100A0D209 /* Assets.xcassets */; };
 		28908D001F65678100A0D209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28908CFE1F65678100A0D209 /* LaunchScreen.storyboard */; };
 		28908D0B1F65678200A0D209 /* zShuffleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28908D0A1F65678200A0D209 /* zShuffleTests.swift */; };
 		28908D161F65678200A0D209 /* zShuffleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28908D151F65678200A0D209 /* zShuffleUITests.swift */; };
+		28908D241F656D8E00A0D209 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28908D231F656D8E00A0D209 /* Deck.swift */; };
+		28908D251F656D8E00A0D209 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28908D231F656D8E00A0D209 /* Deck.swift */; };
+		28908D271F658EA600A0D209 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28908D261F658EA600A0D209 /* DataModel.swift */; };
+		28908D281F658EA600A0D209 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28908D261F658EA600A0D209 /* DataModel.swift */; };
+		28908D2A1F6593C600A0D209 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28908D291F6593C600A0D209 /* Notification.swift */; };
+		28908D2B1F6593C600A0D209 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28908D291F6593C600A0D209 /* Notification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,7 @@
 /* Begin PBXFileReference section */
 		28908CF21F65678100A0D209 /* zShuffle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zShuffle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28908CF51F65678100A0D209 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28908CF71F65678100A0D209 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28908CF71F65678100A0D209 /* ShuffleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleViewController.swift; sourceTree = "<group>"; };
 		28908CFA1F65678100A0D209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28908CFC1F65678100A0D209 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28908CFF1F65678100A0D209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,9 @@
 		28908D111F65678200A0D209 /* zShuffleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zShuffleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28908D151F65678200A0D209 /* zShuffleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zShuffleUITests.swift; sourceTree = "<group>"; };
 		28908D171F65678200A0D209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28908D231F656D8E00A0D209 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		28908D261F658EA600A0D209 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		28908D291F6593C600A0D209 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +107,14 @@
 			isa = PBXGroup;
 			children = (
 				28908CF51F65678100A0D209 /* AppDelegate.swift */,
-				28908CF71F65678100A0D209 /* ViewController.swift */,
+				28908CF71F65678100A0D209 /* ShuffleViewController.swift */,
 				28908CF91F65678100A0D209 /* Main.storyboard */,
 				28908CFC1F65678100A0D209 /* Assets.xcassets */,
 				28908CFE1F65678100A0D209 /* LaunchScreen.storyboard */,
 				28908D011F65678100A0D209 /* Info.plist */,
+				28908D231F656D8E00A0D209 /* Deck.swift */,
+				28908D261F658EA600A0D209 /* DataModel.swift */,
+				28908D291F6593C600A0D209 /* Notification.swift */,
 			);
 			path = zShuffle;
 			sourceTree = "<group>";
@@ -259,7 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28908CF81F65678100A0D209 /* ViewController.swift in Sources */,
+				28908D241F656D8E00A0D209 /* Deck.swift in Sources */,
+				28908D2A1F6593C600A0D209 /* Notification.swift in Sources */,
+				28908D271F658EA600A0D209 /* DataModel.swift in Sources */,
+				28908CF81F65678100A0D209 /* ShuffleViewController.swift in Sources */,
 				28908CF61F65678100A0D209 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28908D2B1F6593C600A0D209 /* Notification.swift in Sources */,
+				28908D251F656D8E00A0D209 /* Deck.swift in Sources */,
 				28908D0B1F65678200A0D209 /* zShuffleTests.swift in Sources */,
+				28908D281F658EA600A0D209 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

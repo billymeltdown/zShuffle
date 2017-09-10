@@ -7,6 +7,7 @@
 //
 
 import XCTest
+
 @testable import zShuffle
 
 class zShuffleTests: XCTestCase {
@@ -24,6 +25,10 @@ class zShuffleTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let originalSet = ["Frank", "Bob", "Alice", "Eve", "Charlie"]
+        let deck: Deck = Deck(cards: originalSet)
+        deck.shuffle()
+        XCTAssert(originalSet != deck.cards, "The shuffled set should not match the original set")
     }
     
     func testPerformanceExample() {
