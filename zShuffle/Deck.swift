@@ -29,6 +29,8 @@ class Deck {
     }
     // A basic random function with an upper bound for the parameter
     private func random(_ max: Int) -> Int {
+        // TODO: get random bytes from CommonCrypto directly, convert to Int, and adjust for bias under the given max
+        // (which is what arc4random_uniform should be doing under the hood for us)
         return Int(arc4random_uniform(UInt32(max)))
     }
     
