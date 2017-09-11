@@ -20,14 +20,16 @@ class Deck {
         let setSize = cards.count
         guard (setSize > 1) else { return }
         for i in stride(from: setSize - 1, through: 1, by: -1) {
-            let j = random(i+1)
+            let j = random(i + 1)
             if i != j {
                 cards.swapAt(i, j)
             }
         }
         NotificationCenter.default.post(name: .cardsDidShuffle, object: nil)
     }
+    // A basic random function with an upper bound for the parameter
     private func random(_ max: Int) -> Int {
         return Int(arc4random_uniform(UInt32(max)))
     }
+    
 }

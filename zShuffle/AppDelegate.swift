@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let model = DataModel.sharedModel
-        model.deck = Deck(cards: ["Stephen", "Don", "Micah", "Nick", "Billy"])
+        model.deck = Deck(cards: ["Billy", "Don", "Micah", "Nick", "Stephen" ])
         return true
     }
 
