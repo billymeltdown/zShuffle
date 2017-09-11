@@ -17,7 +17,10 @@ class Deck {
     }
     // Let's get our shuffle on
     public func shuffle() {
+        // TODO: perform calculation in background and post notification on the main queue
         let setSize = cards.count
+        // We want a copy of the original array to pass as the old values in our notification object
+        let oldCards = cards
         guard (setSize > 1) else { return }
         for i in stride(from: setSize - 1, through: 1, by: -1) {
             let j = random(i + 1)
@@ -25,7 +28,7 @@ class Deck {
                 cards.swapAt(i, j)
             }
         }
-        NotificationCenter.default.post(name: .cardsDidShuffle, object: nil)
+        NotificationCenter.default.post(name: .cardsDidShuffle, object: nil, userInfo:["oldValues":oldCards])
     }
     // A basic random function with an upper bound for the parameter
     private func random(_ max: Int) -> Int {

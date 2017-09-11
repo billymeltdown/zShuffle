@@ -29,6 +29,7 @@ class ShuffleViewController: UITableViewController {
     }
 
     func dataModelChanged(notification:Notification) -> Void {
+        // TODO: get oldValues from notification object, map indexes changed, and animate row moves/swapping
         self.tableView.reloadData()
     }
     
